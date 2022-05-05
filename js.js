@@ -16,15 +16,7 @@ function loop2() {
         y = -grid,
         dy = grid,
         dx = grid
-    if (window.innerWidth < 1240) {
-        setTimeout(function () {
-            canvas.width = window.innerWidth
-            canvas.height = window.innerHeight
-            requestAnimationFrame(loop);
-        }
-            , 1000)
-    }
-    else {
+   input.onblur = function () {
         canvas.width = window.innerWidth
         canvas.height = window.innerHeight
         requestAnimationFrame(loop);
