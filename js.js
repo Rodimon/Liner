@@ -16,9 +16,19 @@ function loop2() {
         y = -grid,
         dy = grid,
         dx = grid
-    canvas.width = window.innerWidth
-    canvas.height = window.innerHeight
-    requestAnimationFrame(loop);
+    if (window.innerWidth < 1240) {
+        setTimeout(function () {
+            canvas.width = window.innerWidth
+            canvas.height = window.innerHeight
+            requestAnimationFrame(loop);
+        }
+            , 500)
+    }
+    else {
+        canvas.width = window.innerWidth
+        canvas.height = window.innerHeight
+        requestAnimationFrame(loop);
+    }
 }
 function loop() {
     requestAnimationFrame(loop);
