@@ -16,11 +16,9 @@ function loop2() {
         y = -grid,
         dy = grid,
         dx = grid
-   input.onblur = function () {
-        canvas.width = window.innerWidth
-        canvas.height = window.innerHeight
+        canvas.width = document.documentElement.scrollWidth
+        canvas.height = document.documentElement.scrollHeight
         requestAnimationFrame(loop);
-    }
 }
 function loop() {
     requestAnimationFrame(loop);
