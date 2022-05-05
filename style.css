@@ -16,9 +16,6 @@ input {
     background-color: white;
     font-size: 3em;
 }
-::placeholder {
-    font-size: 16px;
-}
 
 button {
     margin-top: 6%;
@@ -42,4 +39,9 @@ button:hover {
 
 canvas {
     image-rendering: pixelated;
+}
+@media screen and (max-width: 1240px) {
+    ::placeholder {
+        font-size: 16px;
+    }
 }
