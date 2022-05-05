@@ -22,7 +22,7 @@ function loop2() {
             canvas.height = window.innerHeight
             requestAnimationFrame(loop);
         }
-            , 500)
+            , 1000)
     }
     else {
         canvas.width = window.innerWidth
